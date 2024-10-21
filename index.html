@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Education Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>AI Education Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tutorials">Tutorials</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#forum">Community Forum</a></li>
+                <li><a href="#news">AI News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to AI Education Hub</h2>
+        <p>Explore the world of Artificial Intelligence and how it can enhance productivity and creativity.</p>
+        <p>Learn through tutorials, resources, and join our community discussions!</p>
+    </section>
+
+    <section id="tutorials">
+        <h2>Tutorials</h2>
+        <h3>Step-by-Step Guides</h3>
+        <ul>
+            <li><a href="Tutorials/introduction-to-ai.pdf">Introduction to AI</a></li>
+            <li><a href="Tutorials/machine_learning_tutorial.pdf">Machine Learning Basics</a></li>
+            <li><a href="Tutorials/Natural_Language_Processing.pdf">Natural Language Processing</a></li>
+            <li><a href="Tutorials/aipython.pdf">Using Python for AI</a></li>
+            <li><a href="Tutorials/ai-tools.pdf">AI Tools for Productivity</a></li>
+        </ul>
+    </section>
+
+    <section id="resources">
+        <h2>Resources Library</h2>
+        <h3>Educational Materials</h3>
+        <ul>
+            <li><a href="#">AI Guides (PDF)</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL9ooVrP1hQOGHNaCT7_fwe9AabjZI1RjI">Video Tutorials</a></li>
+            <li><a href="https://www.linkedin.com/pulse/10-most-interesting-articles-ai-may-31-2024-eric-porres-eykre/">Recommended Articles</a></li>
+            <li><a href="https://www.classcentral.com/subject/ai">Free AI Courses</a></li>
+        </ul>
+    </section>
+
+    <section id="gallery">
+        <h2>Image Gallery</h2>
+        <h3>Visuals Related to AI</h3>
+        <div class="gallery-grid">
+            <img src="images/infographic.png" alt="AI Infographic">
+            <img src="images/ai-artwork.png" alt="AI Artwork">
+            <img src="images/ai-tools.png" alt="AI Tools">
+        </div>
+    </section>
+
+    <section id="forum">
+        <h2>Community Forum</h2>
+        <p>Join the conversation about AI, share your projects, and ask questions!</p>
+        <a href="forum.html">Visit Forum</a>
+    </section>
+
+    <section id="news">
+        <h2>AI News and Updates</h2>
+        <h3>Latest Advancements</h3>
+        <ul>
+            <li><strong>October 2024:</strong> New breakthroughs in natural language processing.</li>
+            <li><strong>September 2024:</strong> AI applications in healthcare are expanding.</li>
+            <li><strong>August 2024:</strong> New tools for AI-driven content creation launched.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AI Education Hub. All Rights Reserved.</p>
+    </footer>
+    <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+                console.log('Service Worker registered with scope:', registration.scope);
+            }).catch(function(error) {
+                console.log('Service Worker registration failed:', error);
+            });
+        });
+    }
+</script>
+
+</body>
+</html>
